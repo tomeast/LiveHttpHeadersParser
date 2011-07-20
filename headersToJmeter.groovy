@@ -4,10 +4,16 @@ import javax.xml.transform.TransformerFactory
 import javax.xml.transform.stream.StreamResult
 import javax.xml.transform.stream.StreamSource
 
+if(this.args.size() < 1) {
+    println "Usage: ./headersToJmeter.groovy LIVE_HTTP_HEADER_FILE"
+    println "Please specifiy the full path to a Live Http Header log file"
+    return
+}
+
 def requests = [:]
 def currentUrl
 def requestBlock = false
-new File("/home/tom/genius1.txt").eachLine() { line ->
+new File(args[0]).eachLine() { line ->
     if(!currentUrl) {
         currentUrl = line
         requests[currentUrl] = [:]
