@@ -93,7 +93,7 @@ builder.requests {
     }
 }      
 
-//an xsl that has the skeleton jms file
+//an xsl that has the skeleton jmx file
 def jmxXsl = '''
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
