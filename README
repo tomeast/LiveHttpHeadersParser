@@ -1,5 +1,8 @@
 Groovy script to convert Live Http Header logs into XML and then to a JMeter file
 
-Live Http Headers is a Firefox plugin that is very helpful for monitoring web traffic. This script takes a Live Http Headers log and converts it into xml. It then transforms the xml into a .jmx file that can be opened in JMeter. You could modify the script and just use it to give an xml based representation of the Live Http Header log as well.
+Live Http Headers is a Firefox plugin that is very helpful for monitoring web traffic. 
+This script takes a Live Http Headers log and converts it into xml. 
+It then transforms the xml into a .jmx file that can be opened in JMeter. 
+You could modify the script and just use it to give an xml based representation of the Live Http Header log as well.
 
 Any feedback/issues welcome.
